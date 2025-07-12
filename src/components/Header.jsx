@@ -1,5 +1,6 @@
 import { PiListBold } from "react-icons/pi";
 import logo from "./../assets/img/logo.png";
+import boy from "./../assets/img/hero-kids.png";
 import { useState } from "react";
 
 const Header = () => {
@@ -49,7 +50,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="md:block hidden py-1 px-8 rounded-xl bg-orange-400 text-white duration-500 shadow-2xl hover:bg-green-400 text-xl font-medium">
+        <button className="md:block hidden py-1 px-8 rounded-xl bg-orange-400 text-white duration-500 shadow-md hover:shadow-gray-500 hover:bg-green-400 text-xl font-medium">
           Contact
         </button>
         <button
@@ -98,6 +99,25 @@ const Header = () => {
           </ul>
         )}
       </nav>
+      <div className="pt-12 pb-0 flex md:flex-row flex-col-reverse items-center justify-center gap-10">
+        <div className="flex flex-col md:items-start gap-3 items-center">
+          <h2 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-semibold md:text-left text-center">
+            <p className="text-yellow-500">Empowering</p>
+            students from small age
+            <p className="text-sky-500">towards vision</p>
+          </h2>
+          <p className="text-gray-700 md:text-left text-center">
+            With the courage, Confidence, Creativity and Compassion to make
+            their Unique Contribution in a Diverse and Dynamic World.
+          </p>
+          <button className="py-2 px-8 rounded-xl bg-black text-white duration-500 shadow-md hover:shadow-gray-500 hover:bg-green-700 text-xl font-medium">
+            Enroll Now
+          </button>
+        </div>
+        <div className="sm:w-2/3 w-4/5 flex md:justify-end justify-center mx-auto">
+          <img className="w-4/5" src={boy} alt="boy" />
+        </div>
+      </div>
     </header>
   );
 };
