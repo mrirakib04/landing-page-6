@@ -1,6 +1,7 @@
 import kinder from "./../assets/img/kinder.png";
 import elementary from "./../assets/img/elementary.png";
 import middle from "./../assets/img/middle.png";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Curriculum = () => {
   return (
@@ -49,6 +50,14 @@ const Curriculum = () => {
             Read more
           </button>
         </div>
+      </div>
+      <div className="flex items-center gap-5">
+        <button className="p-3 rounded-full text-white bg-orange-500 hover:bg-yellow-700 duration-300 text-xl">
+          <FaChevronLeft></FaChevronLeft>
+        </button>
+        <button className="p-3 rounded-full text-white bg-orange-500 hover:bg-yellow-700 duration-300 text-xl">
+          <FaChevronRight></FaChevronRight>
+        </button>
       </div>
     </div>
   );
