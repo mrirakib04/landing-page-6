@@ -7,8 +7,8 @@ import bg from "./assets/img/bg.png";
 
 const App = () => {
   return (
-    <div className="max-w-[1480px] w-full border mx-auto flex flex-col items-center">
-      <div className="w-full bg-gradient-to-b from-gray-100 via-gray-100 to-orange-400">
+    <div className="max-w-[1480px] w-full mx-auto flex flex-col items-center">
+      <div className="w-full bg-gradient-to-b from-gray-100 via-gray-100 to-orange-200">
         <Header></Header>
         <div
           style={{ background: `url(${bg})` }}
